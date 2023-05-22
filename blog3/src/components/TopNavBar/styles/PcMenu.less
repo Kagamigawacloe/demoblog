@@ -1,0 +1,53 @@
+// // 导航栏样式
+// .menu {
+// 		font-size: @big-text;
+// 		.font-normal();
+// 		flex: 1;
+// 		.menu-list {
+// 				display: flex;
+// 				color: @textColor;
+// 				li {
+// 						cursor: pointer;
+// 						display: flex;
+// 						flex-direction: column;
+// 						padding: @padding-general;
+// 						align-items: center;
+// 						justify-content: center;
+// 					:deep(.el-dropdown){
+// 					    font-size: @big-text;
+// 					    text-align: center;
+// 					    color: @textColor;
+// 							}
+// 							span {
+// 							    display: block;
+// 							    margin-top: 4px;
+// 									font-size: @small-text;
+// 							}
+// 							&:hover {
+// 							    text-shadow: 1px 1px 10px @hoverColor;
+// 							}
+// 				}
+// 		}
+// }
+.menu {
+	.font-normal();
+	.menu-list {
+	  display: flex;
+		li {
+			cursor: pointer;
+			padding: @padding-general;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			:deep(.el-dropdown){
+				font-size: @big-text;
+				color: @textColor;
+			}
+			&:hover {
+					text-shadow: 1px 1px 10px @hoverColor;
+			}
+		}
+	}
+}
+

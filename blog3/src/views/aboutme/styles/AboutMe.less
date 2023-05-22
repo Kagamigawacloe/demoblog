@@ -1,0 +1,60 @@
+.container {
+		margin-top: @top-nav-bar-height;
+		.font-normal();
+		.border-normal();
+		.shadow();
+		padding: 2rem;
+		border-radius: @border-radius;
+		margin: 1rem;
+		min-height: 80vh;
+		background-color: @bgColor;
+		color: @textColor;
+		text-align: center;
+
+		.welcome,
+		.adk,
+		.avatar,
+		.logo-img,
+		.logo2,
+		.sns-label,
+		.sns-tip,
+		.money-tip,
+		.zhifubao,
+		.weixin {
+				opacity: 0;
+				transform: translateY(20px);
+		}
+
+		.out {
+				width: 100%;
+				height: 100%;
+				.flexbox(column);
+		}
+
+		.avatar {
+				.ball(20rem, @themeColor);
+				overflow: hidden;
+				flex-shrink: 0;
+		}
+
+		.welcome {
+				font-size: 3rem;
+		}
+
+		.adk {
+				font-size: 2rem;
+		}
+
+		.profile {
+				margin: @margin-general 0;
+				font-size: @big-text;
+				text-align: center;
+		}
+		.logo {
+				font-size: @big-text;
+				.flexbox(column);
+				margin: 3rem 0;
+		}
+
+}
+

@@ -1,0 +1,45 @@
+.tip {
+    font-family: 'urafont';
+    font-weight: 600;
+    font-size: @mid-text;
+    color: @tipTextColor;
+		text-align: left;
+		}
+.card-header {
+	display: flex;
+	flex-direction: row;
+	.font-ura();
+	justify-content: space-between;
+	align-items: center;
+	color: @linkColor;
+	.anime-logo {
+			width: 15rem;
+			height: auto;
+	}
+	.week {
+		display: flex;
+		font-size:@big-text;
+		li {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				flex-shrink: 0;
+				margin: 0 0.3rem;
+				width: 5rem;
+				cursor: pointer;
+				span {
+						font-size: @small-text;
+				}
+				&.active {
+						color: @activeColor;
+				}
+		}
+	}
+
+}
+.tab-inner{
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding:@padding-general;
+}

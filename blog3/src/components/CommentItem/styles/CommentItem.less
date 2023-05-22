@@ -1,0 +1,52 @@
+.content{
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: @padding-general;
+	.font-normal();
+	border: @border-line @textColor solid;
+	border-radius: 20px;
+	.shadow();
+	.info{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.user{
+			display: flex;
+			justify-content: center; 
+			.user-avatar{
+				width: 50px;
+				height: 50px;
+			}
+			p {
+			margin-left: 20px;
+			}
+		}
+	}
+	.comment-content{
+		min-height: 150px;
+		font-size: 20px;
+	}
+}
+.paixu {
+	.font-normal();
+	margin-top: @margin-general;
+	display: flex;
+	align-items: center;
+
+	h2 {
+		margin: 0;
+	}
+
+	p {
+		align-self: flex-end;
+		margin-left: @margin-general;
+		cursor: pointer;
+		font-weight: 600;
+	}
+
+	.active {
+		color: red;
+	}
+}

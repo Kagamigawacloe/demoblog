@@ -1,0 +1,174 @@
+   ul{
+      li{
+        margin: @margin-general;
+      }
+      .iconfont{
+        color: @textColor;
+        font-size: @big-text;
+        font-weight: 600;
+      }
+    }
+
+
+.login-box {
+					position: relative;
+          display: block;
+          width: 600px;
+          height: 700px;
+          min-height: 400px;
+          border: @border-line solid @textColor;
+          .shadow(5px,0px,@themeColor);
+          border-radius: 30px;
+					.loginform {
+					  padding: @padding-general;
+					  width: 100%;
+					  display: flex;
+					  flex-direction: column;
+					  padding: 2rem;
+					  :deep(.el-form-item__content){
+					    flex-wrap: nowrap;
+					    .font-ura();
+					    margin: @margin-general 0;
+					  }
+					  :deep(.el-form-item__error){
+					    .font-normal();
+					    top: 110%;
+					  }
+					   .label{
+					     .font-normal();
+					     display: flex;
+					     flex-direction: column;
+					     justify-content: center;
+					     color: @textColor;
+					     .zh{
+					       font-size: @big-text;
+					     }
+					     .en{
+					       font-size: @small-text;
+					     }
+					     &--big{
+					       .font-normal();
+					       color: @textColor;
+					       .zh{
+					         font-size: 3rem;
+					       }
+					       .en{
+					         font-size: @small-text;
+					       }
+					     }
+					   }
+						 .reg{
+						   color: @textColor;
+						   .register{
+						     .font-ura();
+						     font-size: @very-big-text;
+						     .cartoon{
+						       font-family: 'Cartoonfont';
+						       color: @linkColor;
+						       font-size: @big-text;
+						       span{
+						         font-size: @very-big-text;
+						         color: @themeColor;
+						       }
+						     }
+						   }
+							 .shita{
+							   font-size: @big-text;
+							   font-family: 'Cartoonfont';
+							 }
+							}
+							.btn {
+							  width: 100%;
+							  display: flex;
+							  justify-content: space-between;
+							  align-items: center;
+							  .login-btn{
+							    width: 10rem;
+							    height: 4rem;
+							    background: url('../imgs/login-btn.png') no-repeat;
+							    background-size: cover;
+							    cursor: pointer;
+							    transition: all 0.3s ease;
+							    &:hover{
+							      background: url('../imgs/login-btn-hover.png') no-repeat;
+							      background-size: cover;
+							      animation: jump 0.8s both;;
+							    }
+							  }
+							  .register-btn{
+							    width: 10rem;
+							    height: 4rem;
+							    background: url('../imgs/register-btn.png') no-repeat;
+							    background-size: cover;
+							    cursor: pointer;
+							    transition: all 0.3s ease;
+							    &:hover{
+							      background: url('../imgs/register-btn-hover.png') no-repeat;
+							      background-size: cover;
+							      animation: jump 0.8s both;;
+							    }
+							  }
+							}
+					}
+					.goin{
+					  position: absolute;
+					  bottom: 1rem;
+					  right: 1rem;
+					  width: 10rem;
+					  height: 3.8rem;
+					  background: url('../imgs/直接看看.png') no-repeat;
+					  background-size: cover;
+					  cursor: pointer;
+					  transition: all 0.3s ease;
+					  &:hover{
+					    background: url('../imgs/直接看看-hover.png') no-repeat;
+					    background-size: cover;
+					    animation: jump 0.8s both;;
+					  }
+					}
+				}
+				@keyframes jump {
+				  0%,
+				  100% {
+				    transform: translateX(0%);
+				    transform-origin: 50% 50%;
+				  }
+				  15% {
+				    transform: translateX(-30px) rotate(-6deg);
+				  }
+				  30% {
+				    transform: translateX(15px) rotate(6deg);
+				  }
+				  45% {
+				    transform: translateX(-15px) rotate(-3.6deg);
+				  }
+				  60% {
+				    transform: translateX(9px) rotate(2.4deg);
+				  }
+				  75% {
+				    transform: translateX(-6px) rotate(-1.2deg);
+				  }
+				}
+				.rightout{
+				  &-enter-from{
+				    transform: rotateY(90deg);
+				  }
+				  &-enter-active{
+				    transition: transform 1s cubic-bezier(.03,1.06,.46,1.11);
+				  }
+				  &-leave-active{
+				    transition: transform 1s cubic-bezier(0,-0.23,.92,.12);
+				  }
+				  &-enter-to{
+				    transform: rotateY(0);
+				  }
+				  &-leave-from{
+				    transform: rotateY(0deg);
+				  }
+				  &-leave-to{
+				    transform: rotateY(-90deg);
+				  }
+				}
+
+
+

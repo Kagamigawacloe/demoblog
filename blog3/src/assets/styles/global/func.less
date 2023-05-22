@@ -1,0 +1,122 @@
+@size: 200px;
+@color :rgb(252, 252, 252);
+@themeColor: var(--themeColor, rgb(250, 14, 73));
+@bgColor: var(--bgColor, rgb(255, 255, 255));
+@mobile-device: 320px;
+@pad-device: 768px;
+@smallpc-device: 992px;
+@normal-device: 1440px;
+@margin-general: var(--margin-general, 1rem);
+@very-big-text: var(--very-big-text, 2rem);
+@big-text: var(--big-text, 1.5rem);
+@mid-text: var(--mid-text, 1.3rem);
+@small-text: var(--small-text, 1rem);
+@very-samll-text: var(--very-samll-text, 0.8rem);
+@padding-general: var(--padding-general, 1rem);
+@border-radius: var(--border-radius, 1rem);
+@border-line: var(--border-line, 0.2rem);
+@top-nav-bar-height: var(--top-nav-bar-height, 6.6rem);
+@font-family: var(--font-family, 'chinesefont');
+@backGroundImgBlur: var(--backGroundImgBlur, 0rem);
+@backGroundImgLight: var(--backGroundImgLight, 100%);
+@backGroundImgSize: var(--backGroundImgSize, contain);
+@backGroundImgRepeat: var(--backGroundImgRepeat, repeat);
+@backgroundImgAttachment: var(--backgroundImgAttachment, scroll);
+@textColor: var(--textColor, rgb(0, 0, 0)); 
+@globlBgColor: var(--globlBgColor, rgb(236, 236, 236));
+@textColor: var(--textColor, rgb(0, 0, 0));
+@tipTextColor: var(--tipTextCol, rgb(160, 160, 160));
+@warnningTextColor: var(--warnningTextColor, rgb(247, 44, 8));
+@errorTextColor: var(--errorTextColor, rgb(255, 0, 0));
+@bgTextColor: var(--bgTextColor, rgb(255, 255, 255));
+@hoverColor: var(--hoverColor, rgb(250, 14, 73));
+@hoverTextColor: var(--hoverTextColor, rgb(255, 255, 255));
+@linkColor: var(--linkColor, rgb(14, 136, 250));
+@activeColor: var(--activeColor, rgb(250, 14, 73));
+@themeColor: var(--themeColor, rgb(250, 14, 73));
+@shadowColor: var(--shadowColor, rgba(0, 0, 0, 0.3));
+@mobile-device: 320px;
+@pad-device: 768px;
+@smallpc-device: 992px;
+@normal-device: 1440px;
+@margin-general: var(--margin-general, 1rem);
+@big-text: var(--big-text, 1.5rem);
+@mid-text: var(--mid-text, 1.3rem);
+@small-text: var(--small-text, 1rem);
+@very-samll-text: var(--very-samll-text, 0.8rem);
+@padding-general: var(--padding-general, 1rem);
+@border-radius: var(--border-radius, 1rem);
+@border-line: var(--border-line, 0.2rem);
+@top-nav-bar-height: var(--top-nav-bar-height, 6.6rem);
+@font-family: var(--font-family, 'chinesefont');
+@backGroundImgBlur: var(--backGroundImgBlur, 0rem);
+@backGroundImgLight: var(--backGroundImgLight, 100%);
+@backGroundImgSize: var(--backGroundImgSize, contain);
+@backGroundImgRepeat: var(--backGroundImgRepeat, repeat);
+@backgroundImgAttachment: var(--backgroundImgAttachment, scroll);
+@margin-general: var(--margin-general, 1rem);
+// 定义一个球
+.ball(@size, @color) {
+    width: @size;
+    height: @size;
+    border-radius: 50%;
+    background-color: @color;
+}
+
+//flexbox 居中盒子
+.flexbox(@dir: row, @jus: center, @align: center) {
+    display: flex;
+    justify-content: @jus;
+    align-items: @align;
+    flex-direction: @dir;
+}
+
+.shadow(@drop: 3px, @big: 5px, @color: @shadowColor) {
+    box-shadow: @drop @drop @big @color;
+}
+
+//字体设置
+.font-ura() {
+    font-family: 'maoken', 'urafont', '微软雅黑';
+    font-weight: 500;
+}
+
+.font-normal() {
+    font-family: 'maoken', 'urafont', '微软雅黑';
+    font-weight: 500;
+}
+
+// 3、街角魔族类型的图片边框 
+.border-pinkline(@width, @outset) {
+    border: @width solid transparent;
+    border-radius: @width;
+    border-image: url(@/assets/img/page.png) 25 repeat;
+    border-image-outset: @outset;
+}
+
+.textShadow(@drop: 3px, @big: 5px, @color: @shadowColor) {
+    text-shadow: @drop @drop @big @color;
+}
+.text-line-show(@line) {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+    overflow: hidden;
+}
+.flex(@dir: row, @jus: flex-start, @align: flex-start) {
+    display: flex;
+    justify-content: @jus;
+    align-items: @align;
+    flex-direction: @dir;
+}
+
+.cusor-pointer() {
+    cursor: url(@/assets/img/Hand2.cur), pointer;
+}
+
+.border-normal() {
+    border: @border-line solid @textColor;
+    border-radius: @border-radius;
+}
