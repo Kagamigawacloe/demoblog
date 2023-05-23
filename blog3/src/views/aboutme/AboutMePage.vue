@@ -43,8 +43,8 @@
         </div>
         <p class="logo2" :data-index="1">一个基于vue3和Vite的练手项目~</p>
         <p class="logo2" :data-index="2">
-          开源地址:<a href="https://github.com/ADKcodeXD/Myblog-Vue3viteTs" target="_blank"
-            >https://github.com/ADKcodeXD/Myblog-Vue3viteTs</a
+          开源地址:<a href="https://github.com/Kagamigawacloe/demoblog/tree/main/blog3" target="_blank"
+            >https://github.com/Kagamigawacloe/demoblog/tree/main/blog3</a
           >
         </p>
       </div>
